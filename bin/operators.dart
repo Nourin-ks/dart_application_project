@@ -1,4 +1,4 @@
-void main() {
+void main(){
   /// ARITHMETIC OPERATORS --->  +,=,/,*,%,~/
   int a = 124;
   int b = 40;
