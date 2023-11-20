@@ -10,7 +10,7 @@
 
 
 class Student{
-  //String name; // error bcz in dart, values cannot be null ,    the iniyial may or maynot be null
+  //String name; // error bcz in dart, values cannot be null ,    the initial value may or maynot be null
                 // so we use ? --> NULL AWARE 
 
 
@@ -32,9 +32,9 @@ print("Phoneno  : ${s1.phone=9876543210}");
 
 Student s2 = Student();   //obj creation
 print("-------student 2 details------");
-print("Name     : ${s1.name='Rinu'}");
-print("Age      : ${s1.age=22}");
-print("Mark     : ${s1.mark=8}");
-print("Phoneno  : ${s1.phone=9876543210}");
+print("Name     : ${s2.name='Rinu'}");
+print("Age      : ${s2.age=22}");
+print("Mark     : ${s2.mark=8}");
+print("Phoneno  : ${s2.phone=9876543210}");
 }
 
