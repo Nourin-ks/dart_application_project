@@ -72,7 +72,13 @@ void main(){
   }
   print("sum of even: $evensum");
   print("sum of odd: $oddsum");
+}
 
-
+//ASSIGNMENT(multiplication table)
+print("multiplication table");
+int g=5;
+for(int i=1; i<=10; i++){
+int result= i*g;
+print("$i *$g=$result");
 }
 }

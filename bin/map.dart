@@ -33,8 +33,8 @@ void main(){
   print(person);
 
   //to use forEach --> mapname.forEach(key, value){};
-  // person.forEach(key, value){
-  //   print("key : $keys
-  //         value: $values");
-  // };
+  // person.forEach((key, value){
+  //   print("key : $key
+  //         value: $value"); });
+  // }
 }
