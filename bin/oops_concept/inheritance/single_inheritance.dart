@@ -9,7 +9,7 @@ class Parent{                 //parent or super or base class
 
 }
 
-class Child extends Parent{                        //child or sub class
+class Child extends Parent{      //child or sub class
   String cname="Alan";
 
   void cdetails(int std, int year){

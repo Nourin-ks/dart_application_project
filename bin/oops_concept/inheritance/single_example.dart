@@ -1,10 +1,10 @@
 class Phone{
   String name="vivo";
 
-  void details(String os, int size, int RAM){
+  void details(String os, int size, int ram){
     print("os     :$os");
     print("size   :$size");
-    print("RAM    :$RAM");
+    print("RAM    :$ram");
   }
 
 }
