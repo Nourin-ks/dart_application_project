@@ -1,5 +1,6 @@
-//1.SUM OF ELEMENTS IN A LIST
-// void main() {
+void main() {
+////1.SUM OF ELEMENTS IN A LIST
+
 //   List<int> l1 = [1, -3, 7, 9, 0 - 6, 4, -2, 0, 10, -8, 5];
 //   print(l1);
 //   int sum = 0;
@@ -12,7 +13,7 @@
 // }
 
 // //2.SUM OF EVEN NUMBERS
-// void main() {
+
 //   List<int> l1 = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
 //   print(l1);
 //   int evensum = 0;
@@ -23,10 +24,10 @@
 //     }
 //   }
 //   print("the sum of even num is : $evensum");
-// }
+
 
 // //3.COUNT OF POSITIVE,NEGATIVE AND ZEROS
-// void main() {
+
 //   List<int> l1 = [1, -3, 7, 9, 0 - 6, 4, -2, 0, 10, -8, 5];
 //   print(l1);
 //   int positiveCount = 0;
@@ -46,10 +47,10 @@
 //   print("Positive Count: $positiveCount");
 //   print("Negative Count: $negativeCount");
 //   print("Zero Count: $zeroCount");
-//   }
+
 
 // //4.LARGEST NUMBER IN THE LIST
-// void main() {
+
 //   List<int> l1 = [1, -3, 7, 9, 0 - 6, 4, -2, 0, 10, -8, 5];
 //   print(l1);
 //   int largest = 0;
@@ -62,10 +63,10 @@
 
 //   print("The largest number in the list is: $largest");
 
-// }
+
 
 //5.MULTIPLES OF 2 IN THE LIST
-void main() {
+
   List<int> l1 = [1, -3, 7, 9, 0 - 6, 4, -2, 0, 10, -8, 5];
   List<int> mulof2 = [];
 
