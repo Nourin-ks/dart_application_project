@@ -1,3 +1,6 @@
+//SYNTAX ---> returntype call(){
+//            return variable;}
+
 class X{
   String call(String name){
     return name;
