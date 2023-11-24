@@ -1,3 +1,9 @@
+//class like structure & it can have function, variables, abstracr functn
+//it can't be instantiated
+//'with' keyword is used for inheritance
+//class can inherit one or more mixin using the keyword 'with' and only override the abstract functn
+//MULTIPLE INHERITANCE WITHOUT COMPLETE DATA ABSTRACTION
+ 
 mixin A{
   String name="Anu";
   void display(){
@@ -11,7 +17,7 @@ mixin A{
 class Child with A{
   @override
   void sum(int num1, int num2) {
-    print("sum=${num1+num2}");
+    print("sum   :${num1+num2}");
   }
 
 }

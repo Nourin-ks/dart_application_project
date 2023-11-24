@@ -8,6 +8,7 @@ class Father {
   }
 }
 
+//in child class we should use same parameters used in parent class
 class Child extends Father {
   String name = "nourin";
   @override

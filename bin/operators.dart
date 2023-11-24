@@ -59,8 +59,8 @@ print(--x); //o/p = 100
 // TYPE TEST OPERATOR ---> is, is!
 
 int z=100;
-print("z is int");
-print("z is String");
-print("z is! int");
-print("z is! String");
+print(z is int);
+print(z is String);
+print(z is! int);
+print(z is! String);
 }
