@@ -18,7 +18,7 @@ class ContainerDec extends StatelessWidget{
         height: 500,
         decoration: BoxDecoration
         (image: DecorationImage
-        (image: AssetImage("assets/images/bg.jpg"), 
+        (image: AssetImage("assets/images/logo.jpg"), 
         fit: BoxFit.fill)),
         // color: Colors.amber,
         child: Icon(Icons.favorite, size: 60,color: Colors.white,),

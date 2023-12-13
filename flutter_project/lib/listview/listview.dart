@@ -15,21 +15,48 @@ class Listview1 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Listview"),),
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        leading: Icon(Icons.arrow_back_ios),
+        title: Text("Listview"),
+        actions: [
+          const Icon(Icons.camera_alt_outlined),
+          const SizedBox(
+            width: 25,
+            ),
+
+          Icon(Icons.search),
+          SizedBox(
+            width: 25,),
+          PopupMenuButton(itemBuilder: (context){
+            return [
+            const  PopupMenuItem(child: Text("New group")),
+            const  PopupMenuItem(child: Text("New broadcast")),
+            const  PopupMenuItem(child: Text("Linked devices")),
+            const  PopupMenuItem(child: Text("Settings")),
+            const  PopupMenuItem(child: Text("Starred messages")),
+            ];
+          }),
+        ],
+        ),
+
+
       body: ListView(
         children: [
           // Text("Customer List"),
-          // Image.asset("assets/icons/birds.png"),
-          // Image.asset("assets/icons/flowers.png"),
+          // Image.asset("assets/icons/logo3.png"),
+          // Image.asset("assets/icons/logo2.png"),
           // Image.asset("assets/icons/profile.png"),
          
   
-          Card(
-            //color: Colors.red,
-          shadowColor: Colors.red,
+         Card(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          color: Colors.grey,
+          shadowColor: Colors.green,
           elevation: 15,
-          child:ListTile( tileColor: Colors.grey,
-          leading: CircleAvatar(backgroundColor: Colors.green,
+          child:ListTile( 
+            //tileColor: Colors.grey,
+          leading: CircleAvatar(backgroundColor: Colors.black,
           backgroundImage: AssetImage("assets/images/splsh.jpg"),
           //radius: 15,
           //child: Text("hii"),
@@ -41,8 +68,9 @@ class Listview1 extends StatelessWidget{
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-              Icon(Icons.message, color: Colors.green,), 
-              Icon(Icons.call, color: Colors.green,),
+              Icon(Icons.message, color: Colors.black,), 
+              SizedBox(width: 15,),
+              Icon(Icons.call, color: Colors.black,),
         ],
             )
           ),
@@ -51,9 +79,15 @@ class Listview1 extends StatelessWidget{
           ListTile(
             leading: Image.asset("assets/icons/profile.png"),
             title: Text("Rinu"),
-            subtitle: Text("9876543210"),
-            trailing: Wrap(children: [Icon(Icons.message, color: Colors.green,),
-                                      Icon(Icons.call, color: Colors.green,)]
+            subtitle: Wrap(children: [Icon(Icons.done_all,color: Colors.blue,), Text("hiii...")]),
+
+            trailing: Column(children: [
+              Text("yesterday"),
+              CircleAvatar(
+                radius: 10,
+                backgroundColor: Colors.green,
+              )
+            ]
             ),
         ),
 
@@ -61,28 +95,28 @@ class Listview1 extends StatelessWidget{
             leading: Image.asset("assets/icons/profile.png"),
             title: Text("Saam"),
             subtitle: Text("9876543210"),
-            trailing: Icon(Icons.call, color: Colors.green,),
+            trailing: Icon(Icons.call, color: Colors.black,),
           ),
 
           ListTile(
             leading: Image.asset("assets/icons/profile.png"),
             title: Text("Anu"),
             subtitle: Text("9876543210"),
-            trailing: Icon(Icons.call, color: Colors.green,),
+            trailing: Icon(Icons.call, color: Colors.black,),
           ),
 
           ListTile(
             leading: Image.asset("assets/icons/profile.png"),
             title: Text("Manu"),
             subtitle: Text("9876543210"),
-            trailing: Icon(Icons.call, color: Colors.green,),
+            trailing: Icon(Icons.call, color: Colors.black,),
           ),
 
           ListTile(
             leading: Image.asset("assets/icons/profile.png"),
             title: Text("Sanu"),
             subtitle: Text("9876543210"),
-            trailing: Icon(Icons.call, color: Colors.green,),
+            trailing: Icon(Icons.call, color: Colors.black,),
           )
        
         ],

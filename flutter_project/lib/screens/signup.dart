@@ -22,9 +22,9 @@ class Signup extends StatefulWidget {
       
         child: Column(
           children: [
-            Image.asset("assets/images/flowers.png",
-          height: 150,
-          width: 150,),
+            Image.asset("assets/icons/logo2.png",
+          height: 100,
+          width: 100,),
 
           
           Padding(

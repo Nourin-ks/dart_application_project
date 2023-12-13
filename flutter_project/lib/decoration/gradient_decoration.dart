@@ -25,7 +25,7 @@ class GradientEx extends StatelessWidget
           )
         ),
         child: Center(
-      child: Column(children: [Image.asset("assets/images/birds.png"),
+      child: Column(children: [Image.asset("assets/icons/birds.png"),
       Text("my application",
       style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),)
       ]),

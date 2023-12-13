@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project/screens/home.dart';
 import 'package:flutter_project/screens/signup.dart';
@@ -8,6 +7,7 @@ class Login extends StatelessWidget{
   //for fetching values from textfield
   final uname_cntrl=TextEditingController();
   final pwd_cntrl=TextEditingController();
+
   String username="abc@gmail.com";
   String password="1234";
 
@@ -20,9 +20,9 @@ class Login extends StatelessWidget{
       ),
       body: Column(
         children: [
-          Image.asset("assets/images/flowers.png",
-          height: 150,
-          width: 150,
+          Image.asset("assets/icons/logo3.png",
+          height: 100,
+          width: 100,
           ),
 
 
@@ -54,7 +54,7 @@ class Login extends StatelessWidget{
               helperText: "password should be atleast 6 characters",
               labelText: "password",
               prefixIcon: Icon(Icons.lock),
-              suffixIcon: Icon(Icons.remove),
+              suffixIcon: Icon(Icons.remove_red_eye_rounded),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(15)
                 )
@@ -93,8 +93,9 @@ class Login extends StatelessWidget{
               Navigator.of(context)
               .push(MaterialPageRoute(builder: (context)=>Signup()));
             },
-             child: const Text("Not a user....Register here", 
-            // style: GoogleFonts.pacifico(fontSize: 15,)
+             child: const Text("Not a user!!!Register here", 
+             
+            
              ))
         ],
       ),
