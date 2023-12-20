@@ -5,6 +5,12 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(MaterialApp(
+    theme: ThemeData(
+      //primarySwatch: Colors.green
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.green
+        ),
+      ),
     debugShowCheckedModeBanner: false,
     home: Listview1(),
   ));
@@ -40,7 +46,7 @@ class Listview1 extends StatelessWidget{
         ],
         ),
 
-
+      //floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),),
       body: ListView(
         children: [
           // Text("Customer List"),
@@ -81,14 +87,22 @@ class Listview1 extends StatelessWidget{
             title: Text("Rinu"),
             subtitle: Wrap(children: [Icon(Icons.done_all,color: Colors.blue,), Text("hiii...")]),
 
-            trailing: Column(children: [
-              Text("yesterday"),
-              CircleAvatar(
-                radius: 10,
-                backgroundColor: Colors.green,
-              )
-            ]
-            ),
+            trailing:Wrap(
+              direction: Axis.vertical,
+              children: [Text("yesterday"),
+            CircleAvatar(
+              radius: 10,
+              backgroundColor: Colors.green,
+            )],),
+            
+            // trailing: Column(children: [
+            //   Text("yesterday"),
+            //   CircleAvatar(
+            //     radius: 10,
+            //     backgroundColor: Colors.green,
+            //   )
+            // ]
+            // ),
         ),
 
           ListTile(
