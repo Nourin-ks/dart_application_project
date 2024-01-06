@@ -45,6 +45,7 @@ class OnboardingEx extends StatelessWidget {
 
           ///should have either title or titleWidget
           ///must have either body or bodyWidget
+          
           //title: "Page 1",
           //body: "helloooo",
           //image: Image.asset("assets/icons/logo3.png")
