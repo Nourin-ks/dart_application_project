@@ -19,12 +19,6 @@ class Asignmentlv2 extends StatelessWidget {
  "Canada \npopulation: 2.6 mill",
  "USA \npopulation: 19.6 mill"];
 
-//  var name2=["population: 32.9 mill",
-//  "population: 5.54 mill",
-//  "population: 8.8 mill",
-//  "population: 2.6 mill",
-//  "population: 19.6 mill"];
-
 
   var images=["assets/images/delhi.jpg",
   "assets/images/finland.jpg",
@@ -46,11 +40,9 @@ class Asignmentlv2 extends StatelessWidget {
       body: ListView(
         children: List.generate(5,
                 (index) => Card(
-              //child: Image.asset("assets/icons/birds.png", height: 65, width: 65,),
               
-              //child: Text(name[index]),
               child: ListTile(
-                leading: Image.asset(images[index], height: 200,),
+                leading: Image.asset(images[index], height: 400,),
 
                 title: Text(name[index], style: GoogleFonts.archivoBlack(
                 color: Colors.black,
@@ -69,7 +61,7 @@ class Asignmentlv2 extends StatelessWidget {
                 
                 
                 
-                //trailing: CircleAvatar(backgroundColor: Colors.yellow,),
+                
               ),
             )),
       ),

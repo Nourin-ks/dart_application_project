@@ -43,6 +43,8 @@ dependencies:
   lottie: ^2.7.0
   flutter_custom_clippers: ^2.1.0
   introduction_screen: ^3.1.12
+  rich_readmore: ^1.1.1
+  webview_flutter: ^4.4.3
 
 dev_dependencies:
   flutter_test:
