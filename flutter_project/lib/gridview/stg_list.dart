@@ -30,7 +30,7 @@ class Stg_list extends StatelessWidget {
                   child: Column(
                     children: [
                       Expanded(
-                          child: Image.asset("assets/images/panda.png")),
+                          child: Image.asset("assets/icons/panda.png")),
                       const Text(
                         "PANDA",
                         style: TextStyle(
