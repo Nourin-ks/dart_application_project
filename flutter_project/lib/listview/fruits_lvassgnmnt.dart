@@ -6,34 +6,34 @@ void main(){
     home: Asignmentlv2(),));
 }
 class Asignmentlv2 extends StatelessWidget {
-  var name=["Name: Apple",
-    "Name: Mango",
-    "Name: Banana",
-    "Name: Grapes",
-    "Name: Water melon",
-    "Name: kiwi",
-    "Name: Orange", 
+  var name=["Apple",
+    "Mango",
+    "Banana",
+    "Grapes",
+    "Water melon",
+    "kiwi",
+    "Orange", 
   ];
 
- dynamic name1=["Unit: Kg \nPrice: 20",
- "Unit: Kg \nPrice: 30",
- "Unit: Doz \nPrice: 10",
- "Unit: Doz \nPrice: 8",
- "Unit: Kg \nPrice: 25",
- "Unit: Pc \nPrice: 40",
- "Unit: Doz \nPrice: 15",
+ dynamic name1=["Unit: Kg \nPrice: \$20",
+ "Unit: Kg \nPrice: \$30",
+ "Unit: Doz \nPrice: \$10",
+ "Unit: Doz \nPrice: \$8",
+ "Unit: Kg \nPrice: \$25",
+ "Unit: Pc \nPrice: \$40",
+ "Unit: Doz \nPrice: \$15",
  ];
 
 
 
 
-  var images=["assets/images/delhi.jpg",
-  "assets/images/finland.jpg",
-  "assets/images/london.jpg",
-  "assets/images/vancouver.jpg",
-  "assets/images/new_york.jpg",
-  "assets/images/delhi.jpg",
-  "assets/images/delhi.jpg",
+  var images=["assets/icons/apple.png",
+  "assets/icons/mango.png",
+  "assets/icons/banana.png",
+  "assets/icons/grapes.png",
+  "assets/icons/watermelon.png",
+  "assets/icons/kiwi.png",
+  "assets/icons/orange.png",
   ];
   
 
@@ -50,12 +50,20 @@ class Asignmentlv2 extends StatelessWidget {
         children: List.generate(7,
                 (index) => Card(
               
-              child: ListTile(
+              child: ListTile(          
                 leading: Image.asset(images[index], height: 200,),
 
-                title: Text(name[index], ),
+                title: Text("Name: ${name[index]}", ),
 
                 subtitle: Text(name1[index], ),
+                trailing: Expanded(
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                    onPressed: () {  }, 
+                    icon: Icon(Icons.shopping_cart, color: Colors.white,), 
+                    label: Text("Add To Cart", style: TextStyle(color: Colors.white),),
+                    )
+                ),
 
                 
                
